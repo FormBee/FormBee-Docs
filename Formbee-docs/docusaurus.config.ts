@@ -73,10 +73,9 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Intoduction',
+          href: 'https://formbee.dev/dashboard',
+          position: 'right',
+          label: 'Dashboard',
         },
         {
           href: 'https://github.com/formbee/formbee',
