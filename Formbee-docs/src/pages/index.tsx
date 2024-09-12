@@ -6,7 +6,7 @@ export default function Home(): JSX.Element {
   const history = useHistory();
 
   useEffect(() => {
-    history.push('/docs/intro'); // Replace '/docs/intro' with your actual docs entry path
+    history.push('/docs'); // Replace '/docs/intro' with your actual docs entry path
   }, [history]);
 
   return (

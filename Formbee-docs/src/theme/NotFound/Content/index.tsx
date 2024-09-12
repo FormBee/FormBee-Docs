@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 export default function NotFoundContent({className}: Props): JSX.Element {
     useEffect(() => {
       // Redirect to the intro page (adjust the path as necessary)
-      window.location.href = '/docs/intro';
+      window.location.href = '/docs';
     }, []);
   
     return (
