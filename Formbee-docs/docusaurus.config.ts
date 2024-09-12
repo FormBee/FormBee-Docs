@@ -87,24 +87,7 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/formbee/formbee',
-            },
-          ],
-        },
+
       ],
       copyright: `Copyright © ${new Date().getFullYear()} FormBee.  Like our docs? They're built with Docusaurus!`,
     },
