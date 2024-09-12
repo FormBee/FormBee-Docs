@@ -1,0 +1,1 @@
+Our self-hosting docs are a work in progress, for now you can clone our [GitHub repo](https://github.com/formbee/formbee) and follow the instructions in the [README](https://github.com/formbee/formbee/blob/main/README.md).
