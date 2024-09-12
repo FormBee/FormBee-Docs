@@ -1,47 +1,18 @@
 ---
 sidebar_position: 1
+title: Introduction
 ---
 
-# Tutorial Intro
+# What is [FormBee](https://formbee.dev)?
 
-Let's discover **Docusaurus in less than 5 minutes**.
+FormBee is an [open source](https://github.com/formbee/formbee) form backend service that allows you to manage your form submissions, and send them to your email, or use any of our [integrations](https://docs.formbee.dev/docs/category/integrations) to send submission data to your favorite apps.
 
-## Getting Started
+## Why FormBee?
 
-Get started by **creating a new site**.
+I wasn't satisfied with existing form backend services, their pricing, or what they could be using my data for. So I created FormBee, and open-sourced it allowing other developers to self-host our form submission service, or use our budget-friendly hosted service with the same data privacy.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+We offer **Better Privacy**, and **Better Pricing** than any other form backend services, and we're **Open Source** so you can self-host FormBee if you want.
 
-### What you'll need
+### Why would someone need a form backend service?
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+The browser by itself isn't able to do much with the data from a form. You need to send the data to a server, and then the server needs to process the data and send it to the right place. This is where form backend services come in. They allow you to send the form data to a server, and then the server can process the data and send it to the right place without the need to write any server-side code. This speeds up the development process, removing the need for you to write server-side code, or host a server.

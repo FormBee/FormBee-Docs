@@ -35,7 +35,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          
+          sidebarCollapsed: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
 
@@ -107,7 +107,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} FormBee.  Like our docs? Their built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} FormBee.  Like our docs? They're built with Docusaurus!`,
     },
     prism: {
       theme: prismThemes.github,
