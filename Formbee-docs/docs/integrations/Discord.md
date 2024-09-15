@@ -7,7 +7,11 @@ title: Discord
 
 FormBee can send Discord notifications to your Discord server when a form is submitted using webhooks.
 
-## How to do it?
+## What is Discord?
+
+Discord is a free, voice, video, and text chat platform designed primarily for gamers but has since expanded to various communities and uses. Discord allows users to create and join servers, which are organized into channels
+
+## How to integrate FormBee with Discord?
 
 In the [Dashboard](https://formbee.dev/dashboard), on the main page, under **plugins**,you can see the **Discord** section.
 
