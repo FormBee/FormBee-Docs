@@ -85,3 +85,5 @@ export class AppComponent implements OnInit {
   <button type="submit">Submit</button>
 </form>
 ```
+
+We also have an [Angular example](https://github.com/formbee/formbee-example-angular) on GitHub that you can use as a reference.
