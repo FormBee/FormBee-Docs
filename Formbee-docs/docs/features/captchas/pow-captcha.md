@@ -10,40 +10,64 @@ A PoW Captcha aka, a [Proof of Work](https://en.wikipedia.org/wiki/Proof_of_work
 ## How to use it?
 The PoW captcha API is only available on the Growth, and Premium plans.
 
-We use [Altcha](https://altcha.org/) to power our PoW captcha, for aditional info about altcha visit their [website](https://altcha.org/).
+We use [Altcha](https://altcha.org/) to power our PoW captcha, for additional info about altcha visit their [website](https://altcha.org/).
 
-## How to use it?
 First we need to install the Altcha Module. 
-```bash
+```bash title="terminal"
 npm install altcha
 ```
 
 Then we need to import altcha into our project.
-```js
+```js title="script.js"
 import 'altcha';
 ```
 or 
-```js
+```js title="script.js"
 import "./node_modules/altcha/dist/altcha.js";
 ```
 
+include the altcha script in your html file.
+```html title="index.html"
+<script async defer src="/script.js" type="module"></script>
+```
+
 Now we can add the altcha captcha widget to our form.
-```html
-<form>
-    <altcha-widget
-      class="altcha"
-      challengeurl="https://api.formbee.dev/challenge/[api-key]"
-      hidelogo
-      hidefooter
-    ></altcha-widget>
+```html title="index.html"
+<form method="POST" action="https://api.formbee.dev/formbee/[apikey]" enctype="multipart/form-data">
+  <div>
+    <input type="text" name="name" placeholder="Name">
+      <altcha-widget
+        class="altcha"
+        challengeurl="https://api.formbee.dev/challenge/[api-key]"
+        hidefooter
+      ></altcha-widget>
+  </div>
+    <button type="submit" class="button">Submit</button>
 </form>
 ```
 
 Replace the `[api-key]` with your actual API key.
 
 You will also need to validate that the captcha has been solved by the user before submitting the form.
-```js
-const altcha = document.querySelector('altcha-widget');
-altcha.addEventListener('solved', () => {
-  // Handle the form submission here
-});
+```js title="script.js"
+const altcha = document.querySelector(".altcha");
+let captchaDone = false;
+
+document.querySelector('.altcha').addEventListener('statechange', (ev) => {
+    // state can be: unverified, verifying, verified, error
+    console.log('state:', ev.detail.state);
+    if (ev.detail.state === 'verified') {
+        captchaDone = true;
+    }
+  });
+
+// submit
+document.querySelector('form').addEventListener('submit', (ev) => {
+    if (!captchaDone) {
+      ev.preventDefault();
+      console.log('Captcha not done');
+    } else {
+      console.log('Submitting form, in an HTML form this would allow the form to submit. In more complex apps, add your own submission logic.');
+    }
+  });
+```
