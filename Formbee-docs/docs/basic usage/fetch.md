@@ -14,7 +14,7 @@ You can also use FormBee with the Fetch API. Simply make a POST request to `http
       field3: 'value3',
     };
     
-    fetch(`https://api.formbee.dev/[api-key]`, {
+    fetch(`https://api.formbee.dev/formbee/[api-key]`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

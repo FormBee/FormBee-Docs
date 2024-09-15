@@ -25,7 +25,7 @@ function App() {
     e.preventDefault();
 
     // Send the form data to FormBee
-    fetch(`https://api.formbee.dev/${apiKey}`, {
+    fetch(`https://api.formbee.dev/formbee/${apiKey}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

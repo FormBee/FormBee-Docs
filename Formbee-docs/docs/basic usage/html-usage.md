@@ -8,7 +8,7 @@ title: HTML
 Using FormBee in your HTML forms is very simple. Simply add a POST method attribute to your form, and an action attribute of `https://api.formbee.dev/[api-key]`.
 
 ```html
-<form action="https://api.formbee.dev/[api-key]" method="POST">
+<form action="https://api.formbee.dev/formbee/[api-key]" method="POST">
   <input type="text" name="name" placeholder="Name">
   <input type="email" name="email" placeholder="Email">
   <input type="submit" value="Submit">

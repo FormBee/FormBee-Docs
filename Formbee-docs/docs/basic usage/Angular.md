@@ -65,7 +65,7 @@ export class AppComponent implements OnInit {
   onSubmit(): void {
 
     // Sends a POST request with the form data to the specified endpoint
-    this.http.post('https://api.formbee.dev/[api-key]', this.contactForm.value)
+    this.http.post('https://api.formbee.dev/formbee/[api-key]', this.contactForm.value)
       .subscribe(response => {
         // Logs the server's response to the console
         console.log(response);
