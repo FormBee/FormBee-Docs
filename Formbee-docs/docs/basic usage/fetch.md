@@ -5,7 +5,7 @@ title: Fetch
 
 # Fetch
 
-You can also use FormBee with the Fetch API. Simply make a POST request to `https://api.formbee.dev/[api-key]` with a JSON body containing the form data. Here's an example with error handling:
+You can also use FormBee with the Fetch API. Simply make a POST request to `https://api.formbee.dev/formbee/[api-key]` with a JSON body containing the form data. Here's an example with error handling:
 
 ```js
     const formData = {
