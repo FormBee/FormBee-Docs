@@ -1,1 +1,3 @@
-Our self-hosting docs are a work in progress, for now you can clone our [GitHub repo](https://github.com/formbee/formbee) and follow the instructions in the [README](https://github.com/formbee/formbee/blob/main/README.md). This will show you how to get FormBee up and running locally.
+FormBee is open source, and all of our code is available on [Github](https://github.com/formbee/formbee).
+
+In the README, you can find instructions on how to run FormBee locally. In the following docs, we will talk about how to self-host FormBee, in the easiest way possible.
