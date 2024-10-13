@@ -15,7 +15,7 @@ docker pull oia123/formbee-email-only
 ## Next, let's run the docker image
 
 ```bash
-docker run -e EMAIL_PROVIDER=smtp.example.com -e EMAIL_USER=example@example.com -e EMAIL_PASSWORD=Password -e EMAIL_TO=example@example.com -e ORIGIN=* -e SMTP_PORT=465 -p 3000:3000 oia123/formbee-email-only
+docker run -e EMAIL_PROVIDER=smtp.example.com -e EMAIL_USER=example@example.com -e EMAIL_PASSWORD=Password -e EMAIL_TO=example@example.com -e ORIGIN=* -e SMTP_PORT=465 -p 3000:3000 oia123/formbee-email-and-captcha
 ```
 Make sure to replace these environmental variables with your own. Find out more about how to get your SMTP credentials [here](https://docs.formbee.dev/docs/self%20hosting/SMTP). 
 - ```EMAIL_TO``` variable is the email address you want to recieve the form data at. 
