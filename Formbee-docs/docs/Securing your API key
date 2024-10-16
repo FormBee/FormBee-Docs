@@ -1,3 +1,0 @@
-#Securing your API key.
-
-Anything in client side/frontend code can't be totally hidden, so to completely protect your form, you will need to run a minimal server and pass your API key in with a .env variable.
