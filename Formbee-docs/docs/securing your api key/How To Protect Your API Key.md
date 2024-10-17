@@ -2,7 +2,7 @@
 
 ## Why do we need to protect our API key?
 
-Your API key is like a password to your formbee usage. If someone gets access to your API key, they can use it to send form submissions to your account.
+Your API key is like a password to your formbee usage. If a malicious user gets access to your api key, they could spam the key, and use up all of your usage.
 
 ## What can I do to protect my API key?
 
