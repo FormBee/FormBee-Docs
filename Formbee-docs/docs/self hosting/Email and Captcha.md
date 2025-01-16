@@ -18,7 +18,7 @@ docker pull oia123/formbee-email-and-captcha
 
 
 ```bash
-docker run -e EMAIL_PROVIDER=smtp.example.com -e EMAIL_USER=email@example.com -e EMAIL_PASSWORD=password -e EMAIL_TO=email@example.com -e ORIGIN=* -e SMTP_PORT=465 -e GMAIL_CLIENT=Google_Client -e GMAIL_SECRET=Google_Secret -e GMAIL_TRUE=False -e GMAIL_REFRESH=Google_Refresh_Token -e GMAIL_ACCESS=Gmail_AccessToken -p 3000:3000 oia123/formbee-email-and-captcha
+docker run -e EMAIL_PROVIDER=smtp.example.com -e EMAIL_USER=email@example.com -e EMAIL_PASSWORD=password -e EMAIL_TO=email@example.com -e ORIGIN=* -e SMTP_PORT=465 -p 3000:3000 oia123/formbee-email-and-captcha
 ```
 Make sure to replace these environmental variables with your own. Find out more about how to get your SMTP credentials [here](https://docs.formbee.dev/docs/self%20hosting/SMTP). 
 - ```EMAIL_PROVIDER``` is the SMTP provider you are using. EMAIL_USER is your username (email address).
